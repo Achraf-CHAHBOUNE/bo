@@ -1,0 +1,149 @@
+.Navbar {
+    background-color: var(--primary);
+    padding: 10px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    width: 80px;
+    height: 80px;
+    margin-left:20% ;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggler {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    display: none;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: var(--secondary);
+    transition: transform 0.3s ease;
+
+
+}
+
+.open .bar {
+    position: relative;
+    top: -130px;
+    right: 80px;
+}
+.open .bar:first-child {
+    transform: translateY(11px) rotate(45deg);
+}
+
+.open .bar:last-child {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.menu-links {
+    position: relative;
+    flex-direction: row;
+    margin-right: 300px;
+}
+
+.menu-links li {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    margin-left: 50px;
+    
+}
+
+.navigators {
+    color: var(--secondary);
+    font-size: 19px;
+    text-decoration: none;
+}
+
+.navigators:hover {
+    color: var(--secondary);
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.logout {
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: var(--secondary);
+    height: 30px;
+    font-weight: bold;
+    transition: all 800ms ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .menu-toggler{
+        display: flex;
+        position: relative;
+        right: 0;
+        left: 80%;
+        top: -10px;
+
+    }
+    .navigators{
+        padding: 90%;
+    }
+    .nav-container {
+        flex-wrap: wrap;
+        width: 100Vw; 
+        overflow-x: hidden;  
+    }
+
+    .menu {
+        position: relative;
+        flex-grow: 1;
+    }
+    .logo-container{
+        margin-left: 5%;
+    }
+
+    .menu-links {
+        position: relative;
+        top: 100%;
+        left: 0;
+        background-color: var(--primary);
+        width: 100vw;
+        padding: 10px;
+        display: none;
+        z-index: 100;
+        
+        
+    }
+
+    .open .menu-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .logout {
+        display: block;
+        margin-top: 10px;
+    }
+
+}

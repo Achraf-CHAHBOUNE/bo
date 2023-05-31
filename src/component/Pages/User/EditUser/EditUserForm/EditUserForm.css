@@ -1,0 +1,115 @@
+.btn_enreg {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 0;
+    margin-left: 20%;
+    margin-top: 40%;
+
+}
+
+.save_part {
+
+    position: relative;
+    border: none;
+    border-radius: 30px;
+    width: 40%;
+    height: 600px;
+    background: var(--gradient);
+    margin: 50px 0 0 30%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.submit_btn {
+    position: relative;
+    border: 2px solid var(--principal);
+    border-radius: 30px;
+    width: 40%;
+    margin-left: 30%;
+    height: 50px;
+    color: var(--secondary);
+    background-color: var(--primary);
+    margin-top: 30px;
+    transition: all 800ms ease-in-out;
+    font-weight: bold;
+
+}
+
+.submit_btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    border: 4px solid var(--principal);
+}
+
+.enregister_btn {
+    width: 100%;
+    border: 2px solid var(--primary);
+    border-radius: 30px;
+    height: 30px;
+    background-color: var(--secondary);
+    text-align: center;
+    transition: all 800ms ease-in-out;
+}
+
+.enregister_btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.enregister_btn::placeholder {
+    color: var(--primary);
+    font-size: 14px;
+}
+
+
+.Label_enr {
+    position: relative;
+    margin-top: 80%;
+    width: 100%;
+
+}
+
+.Label_enr>p {
+    text-align: center;
+    color: var(--principal);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.Label_enr>p>span {
+    color: var(--primary);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo_enr {
+    position: absolute;
+    background-color: var(--primary);
+    margin-left: 27%;
+    height: 180px;
+    width: 40%;
+    border: 5px solid var(--principal);
+    border-radius: 50%;
+    padding: 3%;
+}
+
+.link_logo {
+    position: relative;
+    top: -225px;
+    margin-top: 20px;
+}
+
+.effectuer_class .erreur_class {
+    font-size: 30;
+}
+
+.effectuer_class {
+    color: green;
+}
+
+.erreur_class {
+    color: red;
+}
