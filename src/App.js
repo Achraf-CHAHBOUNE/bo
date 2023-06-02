@@ -14,7 +14,8 @@ import Scanner from './component/Pages/Scanner/Scanners';
 const router1 =createHashRouter([
   {
     path: "Scanner",
-    element: <Protect component={<Scanner /> } />,
+    // element: <Protect component={<Scanner /> } />,
+    element: <Scanner />,
   },
   {
     path: "/",
@@ -53,8 +54,8 @@ const router1 =createHashRouter([
 const router2 = createHashRouter([
   {
     path: "Scanner",
-    // element: <Scanner />,
-    element:<Protect component={<Scanner /> } />
+    element: <Scanner />,
+    // element:<Protect component={<Scanner /> } />
   },
   {
     path: "/",
