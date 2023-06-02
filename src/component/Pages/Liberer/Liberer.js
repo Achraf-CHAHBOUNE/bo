@@ -6,7 +6,7 @@ import Show from '../../Container/Show/Show';
 const Liberer = () => {
     return (
         <div>
-        <Navbar path={["/","/Enregistrer","/SignIn","/Localiser"]} titre={["Home","Enregister","Connexion","Localiser"]}  />
+        <Navbar path={["/Bproject","/Bproject/Enregistrer","/Bproject/Liberer","/Bproject/Localiser"]} titre={["Home","Enregister","Liberer","Localiser"] } />
         <LibererForm />
         <Show/>
         </div>

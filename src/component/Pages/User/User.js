@@ -6,7 +6,7 @@ import Show from "../../Container/Show/Show.js"
 const Enregister = () => {
     return (
         <div>
-            <Navbar path={["/", "/SignIn", "/Liberer", "/Localiser"]} titre={["Home", "Connexion", "Liberer", "Localiser"]} />
+            <Navbar path={["/Bproject","/Bproject/Enregistrer","/Bproject/Liberer","/Bproject/Localiser"]} titre={["Home","Enregister","Liberer","Localiser"] } />
             <UserInterface />
             <Show/>
         </div>

@@ -13,70 +13,70 @@ import Scanner from './component/Pages/Scanner/Scanners';
 
 const router1 = createBrowserRouter([
   {
-    path: "Scanner",
+    path: "Bproject/Scanner",
     element: <Protect component={<Scanner /> } />,
   },
   {
-    path: "/",
+    path: "Bproject",
     element: <Home />,
   },
   {
-    path: "Enregistrer",
+    path: "Bproject/Enregistrer",
     element: <Protect component={<Enregistrer />} />,
   },
   {
-    path: "Liberer",
+    path: "Bproject/Bproject/Liberer",
     element: <Liberer />,
   },
   {
-    path: "Localiser",
+    path: "Bproject/Localiser",
     element: <Protect component={<Localiser /> } />,
   },
   {
-    path: "User",
+    path: "Bproject/User",
     element: <Protect component={<User /> } />,
   },
   {
-    path: "User/CreateUser",
+    path: "Bproject/User/CreateUser",
     element: <Protect component={<CreateUser /> } />
   },
   {
-    path: "User/EditUser/:username",
+    path: "Bproject/User/EditUser/:username",
     element: <Protect component={<EditUser />} />,
   },
   {
-    path: "SignIn",
+    path: "Bproject/SignIn",
     element: <SignIn />,
   }
 ]);
 
 const router2 = createBrowserRouter([
   {
-    path: "Scanner",
+    path: "Bproject/Scanner",
     // element: <Scanner />,
     element:<Protect component={<Scanner /> } />
   },
   {
-    path: "/",
+    path: "/Bproject",
     element: <Home />,
   },
   {
-    path: "Enregistrer",
+    path: "Bproject/Enregistrer",
     element: <Protect component={<Enregistrer />} />,
     // element: <Enregistrer /> 
   },
   {
-    path: "Liberer",
+    path: "Bproject/Liberer",
     // element: <Liberer />,
     element:<Protect component={<Liberer /> } />
   },
   {
-    path: "Localiser",
+    path: "Bproject/Localiser",
     // element: <Localiser />,
     element:<Protect component={<Localiser /> } />
   },
   {
-    path: "SignIn",
+    path: "Bproject/SignIn",
     element: <SignIn />,
   }
 ]);

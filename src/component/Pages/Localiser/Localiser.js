@@ -5,7 +5,7 @@ import Show from '../../Container/Show/Show'
 const Localiser = () => {
     return (
         <div>
-        <Navbar path={["/","/Enregistrer","/Liberer","/SignIn"]} titre={["Home","Enregister","Liberer","Connexion"]}  /> 
+        <Navbar path={["/Bproject","/Bproject/Enregistrer","/Bproject/Liberer","/Bproject/Localiser"]} titre={["Home","Enregister","Liberer","Localiser"] }  /> 
         <LocaliserForm />
         <Show/>
         </div>
