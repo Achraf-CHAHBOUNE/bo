@@ -11,7 +11,7 @@ function Header() {
   const images = [Image1, Image2, Image3];
   return (
       <div className='header'>
-      <Navbar path={["/Bproject","/Bproject/Enregistrer","/Bproject/Liberer","/Bproject/Localiser"]} display="none" titre={["Home","Enregister","Liberer","Localiser"] }  />
+      <Navbar path={["/","/Enregistrer","/Liberer","/Localiser"]} display="none" titre={["Home","Enregister","Liberer","Localiser"] }  />
       <Hero imgs={images}/>
     </div>
   )
