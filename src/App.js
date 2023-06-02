@@ -17,7 +17,7 @@ const router1 = createBrowserRouter([
     element: <Protect component={<Scanner /> } />,
   },
   {
-    path: "Bproject",
+    path: "/Bproject",
     element: <Home />,
   },
   {
@@ -25,7 +25,7 @@ const router1 = createBrowserRouter([
     element: <Protect component={<Enregistrer />} />,
   },
   {
-    path: "Bproject/Bproject/Liberer",
+    path: "Bproject/Liberer",
     element: <Liberer />,
   },
   {
