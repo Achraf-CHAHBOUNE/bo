@@ -1,6 +1,7 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect} from 'react';
 import Webcam from 'react-webcam';
 import Quagga from 'quagga';
+import "./Scanner.css"
 
 const App = () => {
   const webcamRef = useRef(null);
@@ -67,7 +68,7 @@ const App = () => {
         ref={webcamRef}
         audio={false}
         mirrored={true}
-
+        className='camera'
       />
     </div>
   );
