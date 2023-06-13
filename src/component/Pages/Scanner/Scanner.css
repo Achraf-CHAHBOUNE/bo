@@ -1,8 +1,42 @@
-.camera{
+.Scanner_com{
+    background-color: gray;
+    background-size: cover;
+    height: 748px;
+}
+
+.scan_cam{
     position: relative;
     border: 5px solid aqua;
-    border-radius: 50%;
+    border-radius: 5px;
     width: 40%;
     left: 30%;
-    height: auto;
+    height: 500px;
+    transform: scaleX(-1);
+    margin-top: 100px;
+}
+@media (max-width:1000px) {
+    .scan_cam{
+        position: relative;
+        top: 0px;
+        left: 5%;
+        height: 400px;
+        width: 90%;
+        transform: scaleX(-1);
+    }
+}
+.scan_res{
+    width: 30%;
+    height: 50px;
+    margin-left: 35%;
+}
+.scan_cam {
+    position: relative;
+}
+
+.scan_highlight {
+    position: absolute;
+    border: 2px solid red;
+    box-sizing: border-box;
+    pointer-events: none;
+    z-index: 1;
 }

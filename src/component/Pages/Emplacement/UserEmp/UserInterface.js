@@ -17,7 +17,7 @@ const User = () => {
     }, []);
 
     function getUsers() {
-            axios.get("http://localhost/api/users").then((res) => {
+            axios.get("http://localhost/api/Emplacement.php").then((res) => {
                 console.log(res.data);
                 setProfiles(res.data);
         })
@@ -66,7 +66,7 @@ const User = () => {
 
     return ( 
         <div className='upper_table'>
-            <h1 className='profTitle'>La liste du profiles</h1><br />
+            <h1 className='profTitle'>La liste du Emplacements</h1><br />
             <div className='table_scrol'>
                 <input className='cherche_user' type='text' placeholder='chercher ' onChange={handleSearch}/>
                 <button className='add_btn' onClick={addNew}><span className='add' >Add</span><strong className='plus'>+</strong></button>

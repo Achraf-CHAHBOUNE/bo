@@ -8,6 +8,7 @@
     margin-top:40%;
     
 }
+
 .save_part{
   
     position: relative;
@@ -44,7 +45,7 @@ font-weight: bold;
 .enregister_btn{
     width: 100%;
     border: 2px solid var(--primary);
-    border-radius: 30px;
+    border-radius: 30px 0 0 30px;
     height: 30px;
     background-color: var(--secondary);
     text-align: center;
@@ -100,4 +101,58 @@ color: green;
 }
 .erreur_class{
     color: red;
+}
+
+.scanbtn{
+    background-color: var(--secondary);
+    width:20%;
+    height: 30px;
+    border:2px solid var(--primary) ;
+    border-radius:0 30px 30px 0;
+    transition: all 800ms ease-in-out;
+    border-left: none;
+}
+.scannerdiv{
+    display: flex;
+}
+.scannerdiv>input{
+    border-radius: 30px 0 0 30px;
+    border-right: none;
+}
+.scanbtn:hover,.scannerdiv>input:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#enregister_submit{
+    position: relative;
+    top: -40px;
+}
+@media (max-width:1000px) {
+    #enrgister_form{
+        position: relative;
+        border: none;
+        border-radius: 30px;
+        width: 90%;
+        height: 640px;
+        background: var(--gradient);
+        margin: 30px 0 0 5%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    #enrgister_form>.btn_enreg>.link_logo{
+        position:relative;
+        top: -175px;
+    }
+    .Label_enr>p {
+    position: relative;   
+    top:120px ;    
+    }
+    #enregister_submit{
+        top:-50px;
+        z-index: 3;
+    }
+    
+        
 }
